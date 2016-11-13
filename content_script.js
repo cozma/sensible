@@ -413,3 +413,13 @@ var observer = new MutationObserver(function(mutations) {
 observer.observe(document.body, { childList: true,  subtree: true });
 
 sensor(document.body);
+
+  // Initialize Firebase
+  var config = {
+    apiKey: "AIzaSyBK9ot4uWKKjtXzXC37uz6M-ZTsBYJpPd0",
+    authDomain: "sensible-ae99b.firebaseapp.com",
+    databaseURL: "https://sensible-ae99b.firebaseio.com",
+    storageBucket: "sensible-ae99b.appspot.com",
+    messagingSenderId: "806312686114"
+  };
+  firebase.initializeApp(config);
